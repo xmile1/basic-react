@@ -4,6 +4,7 @@ import './App.css';
 import ProductSelection from './components/ProductSelection';
 import Confirmation from './components/Confirmation';
 import { getCookie } from './components/helper';
+import img from './shopify-bag.png';
 
 class App extends Component {
 
@@ -37,6 +38,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
+          <img className="logo" src={img} />
           <h2>Welcome to My E-Shop</h2>
         </div>
         {this.state.product && <ProductSelection onChangeRoute={this.onChangeRoute.bind(this)} />}

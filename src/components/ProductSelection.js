@@ -4,6 +4,8 @@ import '../styles/ProductSelection.css';
 import Products from './Products';
 import Checkout from './Checkout';
 import { getCookie } from './helper';
+import news from '../img/news.png';
+import sports from '../img/sports.png';
 
 
 class ProductSelection extends Component {
@@ -50,6 +52,7 @@ class ProductSelection extends Component {
         {this.state.catalog.map((service, index) => (
           <div className="product-group" key={index}>
             <div className="category-header">
+              {service.category == 'sports' ? <img className="icon-logo" src={sports} /> : <img className="icon-logo" src={news} />}
               {service.category}
             </div>
             <div className="product-items">
