@@ -12,7 +12,7 @@
     padding: 10px;
     margin: 10px;
     text-align: left;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -163,4 +163,38 @@ label {
     font-size: large;
     display: -webkit-inline-box;
     width: 16%;
+}
+
+.footer{
+    position: fixed;
+    width: 100%;
+    min-height: 10%;
+    background-color: lightgrey;
+    padding-top: 2%;
+    color: #323333;
+    font-size: small;
+    bottom: 0;
+}
+
+@media screen and (max-width: 480px){
+.product-selection {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 85%;
+}
+.product-group{
+    height: unset;
+}
+.confirm-btn {
+    font-size: large;
+    display: -webkit-inline-box;
+    width: 30%;
+}
+.App {
+    text-align: center;
+    margin-bottom: 80px;
+}
 }

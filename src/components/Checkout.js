@@ -7,8 +7,8 @@ const Checkout = ({ addedProducts, onCheckout }) => (
             Basket <span className="badge" data-badge={addedProducts.length} />
     </div>
     <ul className="cart-items">
-      {addedProducts.map(addedProduct => (
-        <li> {addedProduct} </li>))}
+      {addedProducts.length === 0 ? 'You Do not Have any Items In your Cart' : addedProducts.map(addedProduct => (
+              <li> {addedProduct} </li>))}
     </ul>
     <button
       className="btn"
