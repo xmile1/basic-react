@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   componentWillMount() {
-    document.cookie = 'customerId=12345';
+    document.cookie = 'customerId=23456';
   }
 
 

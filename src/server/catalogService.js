@@ -25,7 +25,7 @@ const catalogService = (locationId) => {
   ];
 
   const getServicesById = allServices.map((service) => {
-    const filteredProducts = service.products.filter(product => product.locationId === locationId);
+    const filteredProducts = service.category === 'sports' ? service.products.filter(product => product.locationId === locationId) : service.products;
     service.products = filteredProducts;
     return service;
   });
