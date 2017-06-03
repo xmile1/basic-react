@@ -133,6 +133,7 @@ label {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
 .badge {
     position: relative;
 }
@@ -154,7 +155,12 @@ label {
     /* box-shadow:1px 2px 5px #888; */
 }
 
-.cart-items{
+.cart-items {
     list-style: none;
-    
+}
+
+.confirm-btn {
+    font-size: large;
+    display: -webkit-inline-box;
+    width: 16%;
 }
