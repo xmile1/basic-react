@@ -19,7 +19,7 @@ class ProductSelection extends Component {
   }
 
   componentWillMount() {
-    const customerId = getCookie('customerId');
+    const customerId = getCookie('customerId') || '12345';
     const locationId = this.getLocationId(customerId);
     this.getCatalog(locationId);
   }
@@ -52,7 +52,7 @@ class ProductSelection extends Component {
         {this.state.catalog.map((service, index) => (
           <div className="product-group" key={index}>
             <div className="category-header">
-              {service.category == 'sports' ? <img className="icon-logo" src={sports} /> : <img className="icon-logo" src={news} />}
+              {service.category == 'sports' ? <img className="icon-logo" alt="sports" src={sports} /> : <img className="icon-logo" alt="news" src={news} />}
               {service.category}
             </div>
             <div className="product-items">
@@ -63,7 +63,6 @@ class ProductSelection extends Component {
         <div className="product-group">
           <Checkout addedProducts={this.state.addedItems} onCheckout={this.props.onChangeRoute} />
         </div>
-
       </div>
     );
   }
