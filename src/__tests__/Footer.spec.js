@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import expect, { spyOn } from 'expect';
-import Footer from '../src/components/Footer';
+import Footer from '../components/Footer';
 
 
 let wrapper;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import ProductSelection from '../src/components/ProductSelection';
-import Products from '../src/components/Products';
-import Checkout from '../src/components/Checkout';
+import ProductSelection from '../components/ProductSelection';
+import Products from '../components/Products';
+import Checkout from '../components/Checkout';
 
 
 let wrapper;

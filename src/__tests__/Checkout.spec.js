@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import expect, { spyOn } from 'expect';
-import Checkout from '../src/components/Checkout';
+import Checkout from '../components/Checkout';
 
 
 let wrapper;

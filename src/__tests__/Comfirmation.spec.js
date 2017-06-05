@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import expect, { spyOn } from 'expect';
-import Confirmation from '../src/components/Confirmation';
+import Confirmation from '../components/Confirmation';
 
 
 let wrapper;
