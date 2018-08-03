@@ -7,7 +7,7 @@
     "expect": "^1.20.2",
     "react": "^15.5.4",
     "react-addons-test-utils": "^15.5.1",
-    "react-dom": "^15.5.4"
+    "react-dom": "^16.0.1"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
